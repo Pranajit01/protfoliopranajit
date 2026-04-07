@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranajit Das | AI Engineer & Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="bg-[#0a0a0a] text-white font-sans selection:bg-blue-500/30 overflow-x-hidden">
+    <!-- Cursor Glow -->
+    <div id="cursor-glow" class="fixed w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none z-[-1] transition-transform duration-300 ease-out"></div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-600 to-cyan-400 z-[100] transition-all duration-100" style="width: 0%"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl px-6 py-3 rounded-full border border-white/10 bg-black/20 backdrop-blur-md flex items-center justify-between">
+      <a href="#" class="text-3xl font-bold tracking-tighter font-display">PD<span class="text-blue-500">.</span></a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+        <a href="#journey" class="hover:text-white transition-colors">Journey</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="px-5 py-2 rounded-full bg-white text-black text-xs font-bold hover:bg-blue-500 hover:text-white transition-all duration-300">Hire Me</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex flex-col items-center justify-center relative px-6 pt-20">
+      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px]"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-600/10 rounded-full blur-[100px]"></div>
+      
+      <div class="text-center z-10 max-w-4xl">
+        <div class="flex flex-col items-center mb-8 reveal">
+          <div class="w-24 h-24 rounded-full border-2 border-blue-500 p-1 mb-4">
+            <img src="profile.jpg" alt="Pranajit Das" class="w-full h-full object-cover rounded-full" onerror="this.onerror=null; this.src='https://picsum.photos/seed/pranajit-hero/200/200'">
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-blue-400">
+            <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+            Available for Freelance & Roles
+          </div>
+        </div>
+        <h1 class="text-5xl md:text-8xl font-bold font-display tracking-tight mb-6 reveal">
+          Architecting the <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Future of AI</span>
+        </h1>
+        <p class="text-lg md:text-xl text-white/60 mb-10 max-w-2xl mx-auto reveal">
+          I am <span class="text-white font-medium">Pranajit Das</span>, a Data Analytics & Generative AI specialist focused on building intelligent systems that solve real-world problems.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal">
+          <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.5)] transition-all duration-300">View Projects</a>
+          <a href="https://github.com/Pranajit01" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-white/10 bg-white/5 font-bold hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2">
+            <i data-lucide="github" class="w-5 h-5"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+        <i data-lucide="chevron-down" class="w-6 h-6"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative reveal">
+          <div class="aspect-square rounded-3xl overflow-hidden border border-white/10 bg-white/5 group">
+            <img src="profile.jpg" alt="Pranajit Das" class="w-full h-full object-cover transition-all duration-700 scale-110 group-hover:scale-105" onerror="this.onerror=null; this.src='https://picsum.photos/seed/pranajit-about/800/800'">
+          </div>
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600/20 rounded-full blur-3xl"></div>
+        </div>
+        <div class="reveal">
+          <h2 class="text-3xl md:text-5xl font-bold font-display mb-8">Beyond the <span class="text-blue-500">Code</span>.</h2>
+          <div class="space-y-6 text-white/70 text-lg leading-relaxed">
+            <p>
+              I don't just write scripts; I build bridges between complex data and actionable intelligence. Currently pursuing a <span class="text-white font-medium">B.Sc. in Data Analytics & Generative AI</span> at Techno India University, I've dedicated my journey to mastering the tools that will define the next decade of technology.
+            </p>
+            <p>
+              My approach is rooted in physics—understanding the fundamental laws before applying them. From the University of Kalyani to the cutting-edge labs of Generative AI, I've maintained a hunger for growth that pushes me to pitch AI-powered smart systems at Ideathons and lead as a Class Representative.
+            </p>
+            <p>
+              I believe AI isn't replacing skills—it's amplifying them. My goal is to be the amplifier.
+            </p>
+          </div>
+          <div class="mt-10 flex items-center gap-6">
+            <div class="flex flex-col">
+              <span class="text-3xl font-bold text-white">15+</span>
+              <span class="text-sm text-white/40 uppercase tracking-widest">Certifications</span>
+            </div>
+            <div class="w-px h-12 bg-white/10"></div>
+            <div class="flex flex-col">
+              <span class="text-3xl font-bold text-white">10+</span>
+              <span class="text-sm text-white/40 uppercase tracking-widest">Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 bg-white/[0.02]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-5xl font-bold font-display mb-4">Technical <span class="text-blue-500">Arsenal</span></h2>
+          <p class="text-white/50 max-w-xl mx-auto">A curated stack of technologies I use to build, analyze, and innovate.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- AI & Data -->
+          <div class="p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/[0.08] transition-all duration-500 reveal">
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-6">
+              <i data-lucide="brain-circuit" class="w-6 h-6 text-purple-400"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-6">AI & Data Science</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-purple-500/50 transition-colors">Machine Learning</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-purple-500/50 transition-colors">Deep Learning</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-purple-500/50 transition-colors">NLP</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-purple-500/50 transition-colors">Generative AI</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-purple-500/50 transition-colors">Prompt Engineering</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-purple-500/50 transition-colors">Data Analytics</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="p-8 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/[0.08] transition-all duration-500 reveal">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 flex items-center justify-center mb-6">
+              <i data-lucide="wrench" class="w-6 h-6 text-cyan-400"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-6">Tools & Platforms</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-cyan-500/50 transition-colors">Power BI</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-cyan-500/50 transition-colors">Tableau</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-cyan-500/50 transition-colors">Google Cloud</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-cyan-500/50 transition-colors">GitHub</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-cyan-500/50 transition-colors">VS Code</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs hover:border-cyan-500/50 transition-colors">Looker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-5xl font-bold font-display mb-4">Verified <span class="text-blue-500">Expertise</span></h2>
+        <p class="text-white/50 max-w-xl mx-auto">My professional certifications and credentials from industry leaders.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cert 1 -->
+        <a href="https://edu.google.accredible.com/0d2df6f6-0429-4803-8da8-e22356f5f65a" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">Gemini Certified University Student</h3>
+          <p class="text-xs text-white/40 mb-3">United Latino Students Association</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">ID: 177421647</span>
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">March 2026</span>
+          </div>
+        </a>
+
+        <!-- Cert 2 -->
+        <a href="https://certx.in/certificate/0270772f-3809-4400-b29b-1e1c61cd0997880381" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">AI Tools Workshop</h3>
+          <p class="text-xs text-white/40 mb-3">United Latino Students Association</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Dec 2025</span>
+          </div>
+        </a>
+
+        <!-- Cert 3 -->
+        <div class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+          </div>
+          <h3 class="font-bold mb-1">Google Get Started with Dataplex</h3>
+          <p class="text-xs text-white/40 mb-3">Google</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">ID: 19616161</span>
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Oct 2025</span>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <a href="https://www.credly.com/badges/c06f9c07-dd9f-4a89-8721-c612438c9db1/linked_in_profile" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">Get Started with Looker Skill Badge</h3>
+          <p class="text-xs text-white/40 mb-3">Google</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Oct 2025</span>
+          </div>
+        </a>
+
+        <!-- Cert 5 -->
+        <a href="https://www.credly.com/badges/0340a5cd-92f0-4bc6-8023-0b8aafac91b6/linked_in_profile" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">Get Started with API Gateway Skill Badge</h3>
+          <p class="text-xs text-white/40 mb-3">Google</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Oct 2025</span>
+          </div>
+        </a>
+
+        <!-- Cert 6 -->
+        <a href="https://www.credly.com/badges/f989ebda-a22d-46b6-89b2-a5bd8cf7bae4/linked_in_profile" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">Get Started with Cloud Storage Skill Badge</h3>
+          <p class="text-xs text-white/40 mb-3">Google</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Oct 2025</span>
+          </div>
+        </a>
+
+        <!-- Cert 7 -->
+        <a href="https://www.credly.com/badges/0d15d1c0-2873-4963-b2df-5cdde6f4f92c/linked_in_profile" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">Get Started with Pub/Sub Skill Badge</h3>
+          <p class="text-xs text-white/40 mb-3">Google</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Oct 2025</span>
+          </div>
+        </a>
+
+        <!-- Cert 8 -->
+        <a href="https://www.credly.com/badges/d08543ef-5e98-4248-a77e-71e80efb5250/linked_in_profile" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">The Basics of Google Cloud Compute Skill Badge</h3>
+          <p class="text-xs text-white/40 mb-3">Google</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Oct 2025</span>
+          </div>
+        </a>
+
+        <!-- Cert 9 -->
+        <a href="https://certx.in/certificate/27431ebc-ac17-43c8-9713-f5b20ad95b99693163" target="_blank" class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-blue-500/50 hover:bg-white/[0.08] transition-all duration-300 group reveal">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+              <i data-lucide="award" class="w-5 h-5 text-blue-400"></i>
+            </div>
+            <i data-lucide="external-link" class="w-4 h-4 text-white/20 group-hover:text-blue-400 transition-colors"></i>
+          </div>
+          <h3 class="font-bold mb-1">Certificate_Python</h3>
+          <p class="text-xs text-white/40 mb-3">Be10x</p>
+          <div class="flex items-center gap-2 text-[10px] text-white/60">
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">ID: 57</span>
+            <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Sep 2025</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal">
+        <div>
+          <h2 class="text-3xl md:text-5xl font-bold font-display mb-4">Selected <span class="text-blue-500">Works</span></h2>
+          <p class="text-white/50">Turning complex theories into functional intelligent systems.</p>
+        </div>
+        <a href="https://github.com/Pranajit01" target="_blank" class="text-blue-400 font-bold hover:text-blue-300 transition-colors flex items-center gap-2 group">
+          View all on GitHub
+          <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1: Smart Dustbin System -->
+        <div class="group rounded-3xl border border-white/10 bg-white/5 overflow-hidden hover:border-blue-500/50 transition-all duration-500 reveal">
+          <div class="aspect-video overflow-hidden relative">
+            <img src="https://picsum.photos/seed/ai-dustbin/600/400" alt="Smart Dustbin" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+              <div class="flex gap-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors" title="Live Demo">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com/Pranajit01" target="_blank" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors" title="GitHub Repo">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-2 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">AI & IoT</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Smart Dustbin System</h3>
+            <p class="text-white/50 text-sm mb-6">An automated waste management solution using computer vision to categorize waste and IoT sensors for real-time fill-level monitoring. Pitched at 'THE ESCAPE' Ideathon.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">Python</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">OpenCV</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">TensorFlow Lite</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">Raspberry Pi</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">MQTT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Business Insights Dashboard -->
+        <div class="group rounded-3xl border border-white/10 bg-white/5 overflow-hidden hover:border-blue-500/50 transition-all duration-500 reveal">
+          <div class="aspect-video overflow-hidden relative">
+            <img src="https://picsum.photos/seed/data-viz/600/400" alt="Data Analytics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+              <div class="flex gap-4">
+                <a href="#" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors" title="View Dashboard">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-2 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Data Analytics</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Business Insights Dashboard</h3>
+            <p class="text-white/50 text-sm mb-6">Decision support system analyzing retail patterns. Generated churn predictions and demand forecasts with 85% accuracy using Scikit-learn regression models.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">Power BI</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">SQL Server</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">Scikit-learn</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">Pandas</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">Statsmodels</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Custom LLM Fine-tuning -->
+        <div class="group rounded-3xl border border-white/10 bg-white/5 overflow-hidden hover:border-blue-500/50 transition-all duration-500 reveal">
+          <div class="aspect-video overflow-hidden relative">
+            <img src="https://picsum.photos/seed/gen-ai/600/400" alt="Generative AI" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" referrerPolicy="no-referrer">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+              <div class="flex gap-4">
+                <a href="https://github.com/Pranajit01" target="_blank" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center hover:bg-blue-500 hover:text-white transition-colors" title="GitHub Repo">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-2 mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Generative AI</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Custom LLM Fine-tuning</h3>
+            <p class="text-white/50 text-sm mb-6">Fine-tuned Llama 3 (8B) and Mistral-7B using QLoRA for medical domain reasoning, achieving a 15% accuracy boost and significantly reduced hallucinations.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">PyTorch</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">HuggingFace</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">PEFT (QLoRA)</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">CUDA</span>
+              <span class="text-[10px] px-2 py-1 rounded bg-white/5 border border-white/10">W&B</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="py-24 px-6 bg-white/[0.02]">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-5xl font-bold font-display mb-4">The <span class="text-blue-500">Journey</span></h2>
+          <p class="text-white/50">A timeline of growth, education, and milestones.</p>
+        </div>
+
+        <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-blue-500/50 before:to-transparent">
+          <!-- Item 1 -->
+          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal">
+            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-black z-10 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors group-hover:border-blue-500">
+              <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/[0.08] transition-all duration-500">
+              <div class="flex items-center justify-between mb-2">
+                <time class="text-xs font-bold text-blue-400 uppercase tracking-widest">2023 - Present</time>
+              </div>
+              <h3 class="text-lg font-bold">B.Sc. in Generative AI & Data Analytics</h3>
+              <p class="text-sm text-white/40 mb-4">Techno India University</p>
+              <p class="text-sm text-white/60">Serving as Class Representative and focusing on Python, ML, SQL, and Generative AI projects.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal">
+            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-black z-10 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors group-hover:border-blue-500">
+              <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/[0.08] transition-all duration-500">
+              <div class="flex items-center justify-between mb-2">
+                <time class="text-xs font-bold text-blue-400 uppercase tracking-widest">2025</time>
+              </div>
+              <h3 class="text-lg font-bold">Google Cloud Certifications</h3>
+              <p class="text-sm text-white/40 mb-4">Google Cloud Platform</p>
+              <p class="text-sm text-white/60">Earned multiple skill badges including Dataplex, Looker, API Gateway, and Cloud Storage.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal">
+            <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-black z-10 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors group-hover:border-blue-500">
+              <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-3xl border border-white/10 bg-white/5 hover:bg-white/[0.08] transition-all duration-500">
+              <div class="flex items-center justify-between mb-2">
+                <time class="text-xs font-bold text-blue-400 uppercase tracking-widest">2024</time>
+              </div>
+              <h3 class="text-lg font-bold">Ideathon Pitch</h3>
+              <p class="text-sm text-white/40 mb-4">Techno India University</p>
+              <p class="text-sm text-white/60">Pitched a Smart Dustbin System at "THE ESCAPE" Ideathon, integrating AI with environmental solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl md:text-5xl font-bold font-display mb-4">Open Source <span class="text-blue-500">Impact</span></h2>
+        <p class="text-white/50">My contributions to the developer community.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8 reveal">
+        <div class="p-8 rounded-3xl border border-white/10 bg-white/5 flex flex-col items-center justify-center text-center">
+          <div class="flex gap-1 mb-6">
+            <!-- Mock contribution grid -->
+            <div id="github-grid" class="grid grid-cols-12 gap-1">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">500+ Contributions</h3>
+          <p class="text-white/40 text-sm">In the last year across various AI and Data projects.</p>
+        </div>
+        
+        <div class="p-8 rounded-3xl border border-white/10 bg-white/5 flex flex-col items-center justify-center text-center">
+          <div class="flex items-center gap-8 mb-6">
+            <div class="text-center">
+              <p class="text-3xl font-bold text-white">12</p>
+              <p class="text-[10px] text-white/40 uppercase tracking-widest">Repositories</p>
+            </div>
+            <div class="text-center">
+              <p class="text-3xl font-bold text-white">45</p>
+              <p class="text-[10px] text-white/40 uppercase tracking-widest">Stars</p>
+            </div>
+            <div class="text-center">
+              <p class="text-3xl font-bold text-white">8</p>
+              <p class="text-[10px] text-white/40 uppercase tracking-widest">Forks</p>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Active Developer</h3>
+          <p class="text-white/40 text-sm">Consistently pushing code to improve the AI ecosystem.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work With Me Section -->
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="p-12 rounded-[3rem] bg-gradient-to-br from-blue-600 to-cyan-500 relative overflow-hidden reveal">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div class="relative z-10 max-w-2xl">
+          <h2 class="text-4xl md:text-6xl font-bold font-display mb-6">Let's build something <span class="text-black">extraordinary</span>.</h2>
+          <p class="text-white/80 text-lg mb-10">Whether you need a data-driven strategy, a custom AI solution, or a high-performance web application—I'm ready to deliver.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="px-8 py-4 rounded-xl bg-black text-white font-bold hover:bg-white hover:text-black transition-all duration-300">Start a Project</a>
+            <a href="#" class="px-8 py-4 rounded-xl border border-white/20 bg-white/10 backdrop-blur-sm font-bold hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+              <i data-lucide="download" class="w-5 h-5"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16">
+        <div class="reveal">
+          <h2 class="text-3xl md:text-5xl font-bold font-display mb-8">Get in <span class="text-blue-500">Touch</span>.</h2>
+          <p class="text-white/50 text-lg mb-12">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          
+          <div class="space-y-8">
+            <div class="flex items-center gap-6 group">
+              <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-blue-500 transition-colors">
+                <i data-lucide="mail" class="w-6 h-6 text-blue-400"></i>
+              </div>
+              <div>
+                <p class="text-xs text-white/40 uppercase tracking-widest mb-1">Email Me</p>
+                <a href="mailto:daspranajit973@gmail.com" class="text-lg font-medium hover:text-blue-400 transition-colors">daspranajit973@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-6 group">
+              <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-blue-500 transition-colors">
+                <i data-lucide="linkedin" class="w-6 h-6 text-blue-400"></i>
+              </div>
+              <div>
+                <p class="text-xs text-white/40 uppercase tracking-widest mb-1">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/pranajit-ai" target="_blank" class="text-lg font-medium hover:text-blue-400 transition-colors">linkedin.com/in/pranajit-ai</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-6 group">
+              <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-blue-500 transition-colors">
+                <i data-lucide="github" class="w-6 h-6 text-blue-400"></i>
+              </div>
+              <div>
+                <p class="text-xs text-white/40 uppercase tracking-widest mb-1">GitHub</p>
+                <a href="https://github.com/Pranajit01" target="_blank" class="text-lg font-medium hover:text-blue-400 transition-colors">github.com/Pranajit01</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-8 md:p-12 rounded-[2rem] border border-white/10 bg-white/5 reveal">
+          <form class="space-y-6">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-white/40 uppercase tracking-widest">Name</label>
+                <input type="text" placeholder="John Doe" class="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors">
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-white/40 uppercase tracking-widest">Email</label>
+                <input type="email" placeholder="john@example.com" class="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors">
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-white/40 uppercase tracking-widest">Subject</label>
+              <input type="text" placeholder="Project Inquiry" class="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors">
+            </div>
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-white/40 uppercase tracking-widest">Message</label>
+              <textarea placeholder="Tell me about your project..." rows="4" class="w-full px-6 py-4 rounded-xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none transition-colors resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition-all duration-300">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/10">
+      <div class="max-w-6xl mx-auto flex flex-col items-center justify-center gap-8">
+        <div class="flex items-center gap-8">
+          <a href="https://github.com/Pranajit01" target="_blank" class="text-white/40 hover:text-blue-400 transition-colors"><i data-lucide="github" class="w-6 h-6"></i></a>
+          <a href="https://www.linkedin.com/in/pranajit-ai" target="_blank" class="text-white/40 hover:text-blue-400 transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+          <a href="mailto:daspranajit973@gmail.com" class="text-white/40 hover:text-blue-400 transition-colors"><i data-lucide="mail" class="w-6 h-6"></i></a>
+        </div>
+        <p class="text-white/40 text-sm tracking-widest uppercase">© 2026 Pranajit Das. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
